@@ -64,9 +64,9 @@
 
                 <section>
                 <h2>Prisoner's Dilemma</h2>
-
                 <hr>
 
+                $$\begin{pmatrix}50,50&0,100\\100,0&1,1\end{pmatrix}$$
                 </section>
 
                 <section data-markdown>
@@ -93,6 +93,14 @@
                 <div id="YouSIMUL8-window" style="width:900px; height:500px;" ></div><script src="http://YouSIMUL8.com/embed.php?x=4f13e187b8e30" type="text/javascript"></script>
                 </section>
 
+                <section>
+                <h2>Queueing Theory</h2>
+
+                <hr>
+
+                $$\pi_i=\begin{cases}1&2\\2&4\end{cases}$$
+                </section>
+
 
                 <section data-markdown>
                 ##Queueing Games
@@ -110,6 +118,26 @@
                 ![Pigou](https://docs.google.com/drawings/pub?id=1pKMC-2bERGMH6iNkH5rkGo7ymKHPXBI-6LSnAa08vYA&w=700)
                 </section>
 
+                <section data-markdown>
+                ##Research Project: 1
+
+                ---
+
+                ![PoA_of_Healthcare]()
+                </section>
+
+                <section data-markdown>
+                ##Research Project: 2
+
+                ---
+
+                ![AE_EMS_Interface]()
+                </section>
+
+                <section data-markdown>
+                ##Questions?
+
+                </section>
 			</div>
 
 		</div>
@@ -138,6 +166,10 @@
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
+
+            Reveal.addEventListener( 'slidechanged', function( event ) {
+                MathJax.Hub.Rerender();
+                } );
 
 		</script>
 
